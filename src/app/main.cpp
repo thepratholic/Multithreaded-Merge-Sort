@@ -18,4 +18,7 @@ int main(int argc, char *argv[]) {
     mergesort -> sort();
 
     auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> mergesortDuration = end - start;
+
+    
 }
