@@ -1,5 +1,5 @@
-#ifndef MERGESORT_H
-#define MERGESORT_H
+#ifndef PARALLELMERGESORT_H
+#define PARALLELMERGESORT_H
 
 #include <vector>
 #include <thread>
