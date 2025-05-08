@@ -6,3 +6,7 @@ MergeSort::MergeSort(vector<int> *nums) {
 }
 
 MergeSort::~MergeSort() {}
+
+void MergeSort::recursiveSort(int left, int right) {
+    
+}
