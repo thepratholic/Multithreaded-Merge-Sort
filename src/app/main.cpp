@@ -1,15 +1,18 @@
 #include <bits/stdc++.h>
 #include <iostream>
 #include "sorting/mergeSort.hpp"
+#include "sorting/parallelMergeSort.hpp"
 using namespace std;
 
 int main(int argc, char *argv[]) {
 
     const int SIZE = 1000;
     vector<int> nums(SIZE);
+    vector<int> nums1(SIZE);
 
     for(int i = 0; i < SIZE; i++) {
         nums[i] = rand() % 1000;
+        nums1[i] = nums[i];
     }
 
     MergeSort* mergesort = new MergeSort(&nums);
@@ -23,5 +26,15 @@ int main(int argc, char *argv[]) {
     cout << "MergeSort Algorithm Time taken : " << mergesortDuration.count() << " seconds!" << endl;
 
     delete mergesort;
+
+    ParallelMergeSort* mergesort1 = new ParallelMergeSort(&nums1);
+    start = std::chrono::high_resolution_clock::now();
+    mergesort1->sort();
+    end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> parallelMergeSortDuration = end - start;
+
+    std::cout << "ParallelMergeSort time taken: " << parallelMergeSortDuration.count() << " seconds" << std::endl;
+
+    delete mergesort1;
     return 0;
 }
