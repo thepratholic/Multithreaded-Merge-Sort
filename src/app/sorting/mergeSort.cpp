@@ -16,7 +16,11 @@ void MergeSort::recursiveSort(int left, int right) {
     recursiveSort(mid + 1, right);
 
     vector<int> result;
+
+    int i = left;
+    int j = mid + 1;
     
+
 }
 
 
