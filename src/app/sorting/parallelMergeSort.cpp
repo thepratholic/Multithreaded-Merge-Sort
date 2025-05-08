@@ -14,7 +14,7 @@ void ParallelMergeSort::recursiveSort(int left, int right) {
 
     if (right - left < THRESHOLD) {
         sort(nums->begin() + left, nums->begin() + right + 1);
-        return;
+        exit(1);
     }
     
     if (left >= right) {
