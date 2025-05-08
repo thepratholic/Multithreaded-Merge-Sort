@@ -20,7 +20,10 @@ void MergeSort::recursiveSort(int left, int right) {
     int i = left;
     int j = mid + 1;
     while(i <= mid && j <= right) {
-        
+        if((*nums)[i] <= (*nums)[j]) {
+            result.push_back((*nums)[i]);
+            i++;
+        }
     }
 
 }
