@@ -28,12 +28,12 @@ int main(int argc, char *argv[]) {
     delete mergesort;
 
     ParallelMergeSort* mergesort1 = new ParallelMergeSort(&nums1);
-    start = std::chrono::high_resolution_clock::now();
+    start = chrono::high_resolution_clock::now();
     mergesort1->sort();
-    end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> parallelMergeSortDuration = end - start;
+    end = chrono::high_resolution_clock::now();
+    chrono::duration<double> parallelMergeSortDuration = end - start;
 
-    std::cout << "ParallelMergeSort time taken: " << parallelMergeSortDuration.count() << " seconds" << std::endl;
+    cout << "ParallelMergeSort time taken: " << parallelMergeSortDuration.count() << " seconds" << endl;
 
     delete mergesort1;
     return 0;
