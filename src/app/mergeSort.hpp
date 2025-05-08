@@ -15,3 +15,5 @@ class MergeSort {
         void sort();
         void recursiveSort(int left, int right);
 };
+
+#endif
