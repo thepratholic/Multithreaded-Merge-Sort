@@ -8,4 +8,8 @@ class MergeSort {
     private:
 
         vector<int> *nums;
+
+    public:
+        MergeSort(vector<int> *nums);
+        ~MergeSort();
 };
