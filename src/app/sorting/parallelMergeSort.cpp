@@ -24,11 +24,10 @@ void ParallelMergeSort::recursiveSort(int left, int right) {
     thread thread_1([this, left, mid] { this->recursiveSort(left, mid); });
     thread thread_2([this, mid, right] { this->recursiveSort(mid + 1, right); });
 
-    this->recursiveSort(left, mid);
-    this->recursiveSort(mid + 1, right);
-
     thread_1.join();
     thread_2.join();
+
+
 
     std::vector<int> result;
     int i = left;
