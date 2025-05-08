@@ -37,6 +37,12 @@ void MergeSort::recursiveSort(int left, int right) {
         i++;
     }
 
+
+    while(j <= right) {
+        result.push_back((*nums)[j]);
+        j++;
+    }
+
 }
 
 
