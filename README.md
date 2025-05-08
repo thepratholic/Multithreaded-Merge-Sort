@@ -39,7 +39,6 @@ Benchmark tests were conducted to compare execution times:
 | Standard Merge Sort  | 25 seconds     |
 | Parallel Merge Sort  | 1 second       |
 
-> 💻 Tested on a MacBook M1 Pro — demonstrating a **25x speed-up** with parallelism!
 
 ---
 
