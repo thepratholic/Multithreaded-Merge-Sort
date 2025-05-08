@@ -16,4 +16,6 @@ int main(int argc, char *argv[]) {
     auto start = chrono::high_resolution_clock::now(); // chrono is time library, hence we are just checking the start time of the algo
     
     mergesort -> sort();
+
+    auto end = chrono::high_resolution_clock::now();
 }
