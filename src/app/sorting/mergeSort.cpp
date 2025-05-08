@@ -43,6 +43,12 @@ void MergeSort::recursiveSort(int left, int right) {
         j++;
     }
 
+    for(int k = 0; k < result.size(); k++) {
+        (*nums)[left + k] = result[k];
+    }
+
+    return;
+
 }
 
 
