@@ -14,6 +14,9 @@ void MergeSort::recursiveSort(int left, int right) {
 
     recursiveSort(left, mid);
     recursiveSort(mid + 1, right);
+
+    vector<int> result;
+    
 }
 
 
