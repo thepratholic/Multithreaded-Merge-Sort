@@ -20,5 +20,6 @@ int main(int argc, char *argv[]) {
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> mergesortDuration = end - start;
 
+    cout << "MergeSort Algorithm Time taken : " << mergesortDuration.count() << " seconds!" << endl;
     
 }
