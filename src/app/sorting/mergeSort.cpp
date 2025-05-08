@@ -12,7 +12,8 @@ void MergeSort::recursiveSort(int left, int right) {
 
     int mid = left + (right - left) / 2;
 
-    
+    recursiveSort(left, mid);
+    recursiveSort(mid + 1, right);
 }
 
 
