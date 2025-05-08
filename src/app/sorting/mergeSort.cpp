@@ -1,4 +1,4 @@
-#include <mergeSort.hpp>
+#include "mergeSort.hpp"
 using namespace std;
 
 MergeSort::MergeSort(vector<int> *nums) {
