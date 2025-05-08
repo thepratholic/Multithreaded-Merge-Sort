@@ -7,4 +7,10 @@ int main(int argc, char *argv[]) {
 
     const int SIZE = 1000;
     vector<int> nums(SIZE);
+
+    for(int i = 0; i < SIZE; i++) {
+        nums[i] = rand() % 1000;
+    }
+
+    
 }
