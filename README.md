@@ -57,3 +57,10 @@ Benchmark tests were conducted to compare execution times:
    ```bash
    git clone <repo-url>
    cd parallelMergeSort/src/app
+    ```
+
+2. **Compile and run**:
+    ```bash
+    g++ main.cpp -o main
+    ./main
+    ```
