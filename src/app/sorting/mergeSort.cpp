@@ -8,7 +8,11 @@ MergeSort::MergeSort(vector<int> *nums) {
 MergeSort::~MergeSort() {}
 
 void MergeSort::recursiveSort(int left, int right) {
+    if(left >= right) return;
 
+    int mid = left + (right - left) / 2;
+
+    
 }
 
 
