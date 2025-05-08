@@ -19,7 +19,9 @@ void MergeSort::recursiveSort(int left, int right) {
 
     int i = left;
     int j = mid + 1;
-    
+    while(i <= mid && j <= right) {
+        
+    }
 
 }
 
