@@ -15,4 +15,5 @@ int main(int argc, char *argv[]) {
     MergeSort* mergesort = new MergeSort(&nums);
     auto start = chrono::high_resolution_clock::now(); // chrono is time library, hence we are just checking the start time of the algo
     
+    mergesort -> sort();
 }
