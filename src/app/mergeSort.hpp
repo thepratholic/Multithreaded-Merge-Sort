@@ -12,4 +12,6 @@ class MergeSort {
     public:
         MergeSort(vector<int> *nums);
         ~MergeSort();
+        void sort();
+        void recursiveSort(int left, int right);
 };
