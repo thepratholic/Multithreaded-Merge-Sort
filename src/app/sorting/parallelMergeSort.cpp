@@ -1,4 +1,6 @@
 #include "parallelMergeSort.hpp"
+#include <thread>
+#include <iostream>
 using namespace std;
 
 
@@ -19,6 +21,8 @@ void ParallelMergeSort::recursiveSort(int left, int right) {
         return;
     }
     int mid = left + (right - left) / 2;
+    thread thread_1([this, left, mid] { this->recursiveSort(left, mid); });
+    thread thread_2([this, mid, right] { this->recursiveSort(mid + 1, right); });
 
     this->recursiveSort(left, mid);
     this->recursiveSort(mid + 1, right);
