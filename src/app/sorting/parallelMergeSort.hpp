@@ -8,14 +8,14 @@
 
 using namespace std;
 
-class MergeSort {
+class ParallelMergeSort {
     private:
 
         vector<int> *nums;
 
     public:
-        MergeSort(vector<int> *nums);
-        ~MergeSort();
+        ParallelMergeSort(vector<int> *nums);
+        ~ParallelMergeSort();
         void sort();
         void recursiveSort(int left, int right);
 };
