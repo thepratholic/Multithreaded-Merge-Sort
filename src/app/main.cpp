@@ -21,5 +21,7 @@ int main(int argc, char *argv[]) {
     chrono::duration<double> mergesortDuration = end - start;
 
     cout << "MergeSort Algorithm Time taken : " << mergesortDuration.count() << " seconds!" << endl;
-    
+
+    delete mergesort;
+    return 0;
 }
